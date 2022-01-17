@@ -7,6 +7,9 @@
 	"parser": "babel-eslint",
 	"rules": {
 		"indent": "off",
-		"operator-linebreak": "off"
+		"operator-linebreak": "off",
+		"linebreak-style": 0,
 	}
+	
+
 }
