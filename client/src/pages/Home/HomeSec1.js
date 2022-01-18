@@ -1,8 +1,8 @@
 import React from "react";
 import { Grid, Box, Heading, List, Text, Button, Image } from "grommet";
 import { Checkmark } from "grommet-icons";
-import girlImage from "../images/autistic-little-girl-close-up-2021-09-24-04-06-23-utc.jpg";
-import "./Home.css";
+import girlImage from "../../images/autistic-little-girl-close-up-2021-09-24-04-06-23-utc.jpg";
+import "../Home.css";
 import { Link } from "react-router-dom";
 const HomeSec1 = () => {
 	return (
