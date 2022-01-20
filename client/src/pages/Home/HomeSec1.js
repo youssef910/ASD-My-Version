@@ -5,14 +5,14 @@ import girlImage from "../../utilities/images/autistic-little-girl-close-up-2021
 import "../../App.css";
 import { Link } from "react-router-dom";
 import colors from "../../utilities/colors";
-import { size } from "polished";
 const HomeSec1 = () => {
 	return (
 		<Grid
-			rows={["medium", "large"]}
+			rows={["medium"]}
 			columns={["45%", "50%"]}
 			areas={[["welcome", "images"]]}
 			gap="small"
+			height={"450px"}
 		>
 			<Box pad={"medium"} gridArea="welcome">
 				<Heading style={{ fontFamily: "oboto_slabregular", size: "48px" }}>
