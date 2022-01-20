@@ -1,20 +1,24 @@
 import React, { useState } from "react";
-import { Menu } from "grommet";
+import { Grommet, Menu } from "grommet";
+
+import colors from "../../utilities/colors";
+
+import "../../App.css";
 
 const NavBarDropDown = ({ items }) => {
 	return (
 		<Menu
 			style={{
-				fontFamily: "Roboto-Slab",
+				fontFamily: "roboto_slabregular",
 				fontSize: "20px",
-				color: "#0A2229",
-				fontWeight: "normal",
-				margin:"0"
+				// fontWeight: "normal",
 			}}
-			hoverIndicator={{ background: "#1E6DD0" }}
+			hoverIndicator={{ background: colors.blue, color: "red" }}
 			icon={false}
 			dropProps={{
 				align: { top: "bottom" },
+				fontFamily: "ambitsemibold",
+				// fontSize: "14px",
 			}}
 			label={items.label}
 			items={items.taps}
