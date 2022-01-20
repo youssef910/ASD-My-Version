@@ -1,11 +1,11 @@
 import { Button } from "grommet";
-
+import colors from "../../utilities/colors";
+import "../../App.css";
 let customStyle = {
-	fontFamily: "Roboto-Slab",
-	fontSize: "24px",
-	color: "#0A2229",
+	fontFamily: "ambitsemibold",
+	color: colors.black,
+	fontSize: "20px",
 	borderRadius: "5px",
-	backGround: "#F4DFD0",
 };
 const customButton = (label) => (
 	<Button
@@ -13,7 +13,7 @@ const customButton = (label) => (
 		hoverIndicator
 		style={customStyle}
 		primary
-		color="#F4DFD0"
+		color={colors.peag}
 		size="medium"
 		label={label}
 	/>
