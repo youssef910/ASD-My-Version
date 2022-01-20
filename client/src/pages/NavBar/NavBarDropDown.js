@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { Grommet, Menu } from "grommet";
+import React from "react";
+import { Menu } from "grommet";
 
 import colors from "../../utilities/colors";
 
 import "../../App.css";
-import { transparentize } from "polished";
 
 const NavBarDropDown = ({ items }) => {
 	return (
@@ -12,9 +11,8 @@ const NavBarDropDown = ({ items }) => {
 			style={{
 				fontFamily: "roboto_slabregular",
 				fontSize: "20px",
-				// fontWeight: "normal",
 			}}
-			hoverIndicator={{ background: colors.blue, color: "red" }}
+			hoverIndicator={{ background: colors.blue, color: "white" }}
 			icon={false}
 			dropProps={{
 				align: { top: "bottom" },
