@@ -1,5 +1,5 @@
 import { Heading } from "grommet";
-import colors from "../utilities/colors";
+
 import React from "react";
 
 import {
