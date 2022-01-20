@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { items } from "./Items";
 import logo from "../../utilities//images/Logo.jpeg";
 import NavBarDropDown from "./NavBarDropDown";
+import SearchInput from "./SearchInput";
 import colors from "../../utilities/colors";
 import { grommet } from "grommet/themes";
 import { deepMerge } from "grommet/utils";
@@ -51,6 +52,7 @@ const NavBar = () => {
 						label="Contact"
 						alignSelf="center"
 					/>
+					<SearchInput />
 				</Nav>
 			</Header>
 		</Grommet>
