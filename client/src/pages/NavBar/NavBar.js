@@ -25,7 +25,7 @@ const customTheme = deepMerge(grommet, {
 const NavBar = () => {
 	return (
 		<Grommet theme={customTheme}>
-			<Header border={"bottom"} gap="small ">
+			<Header border={"bottom"} gap="xsmall" background={colors.lightBg}>
 				<Nav direction="row">
 					<Avatar
 						src={logo}

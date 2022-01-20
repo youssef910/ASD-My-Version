@@ -4,6 +4,7 @@ import { Grommet, Menu } from "grommet";
 import colors from "../../utilities/colors";
 
 import "../../App.css";
+import { transparentize } from "polished";
 
 const NavBarDropDown = ({ items }) => {
 	return (
@@ -18,7 +19,7 @@ const NavBarDropDown = ({ items }) => {
 			dropProps={{
 				align: { top: "bottom" },
 				fontFamily: "ambitsemibold",
-				// fontSize: "14px",
+				background: colors.lightBg,
 			}}
 			label={items.label}
 			items={items.taps}
