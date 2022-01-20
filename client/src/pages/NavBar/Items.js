@@ -20,7 +20,7 @@ const customButton = (label) => (
 );
 export const items = {
 	about: {
-		label: "ABOUT",
+		label: "About",
 		taps: [
 			{
 				label: customButton("What is Autism"),
@@ -45,7 +45,7 @@ export const items = {
 		],
 	},
 	resources: {
-		label: "RESOURCES",
+		label: "Resources",
 		taps: [
 			{
 				label: customButton("Timetables"),
