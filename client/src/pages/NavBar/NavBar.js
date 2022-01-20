@@ -8,12 +8,13 @@ import SearchInput from "./SearchInput";
 import colors from "../../utilities/colors";
 import { grommet } from "grommet/themes";
 import { deepMerge } from "grommet/utils";
+import LoginButton from "./LoginButton";
 import "../../App.css";
 
 const customTheme = deepMerge(grommet, {
 	anchor: {
 		extend: {
-			fontFamily: "oboto_slabregular",
+			fontFamily: "roboto_slabregular",
 			padding: "13px",
 		},
 		color: colors.black,
@@ -53,6 +54,7 @@ const NavBar = () => {
 						alignSelf="center"
 					/>
 					<SearchInput />
+					<LoginButton />
 				</Nav>
 			</Header>
 		</Grommet>
