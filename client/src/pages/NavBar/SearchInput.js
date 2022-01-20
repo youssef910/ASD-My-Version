@@ -15,7 +15,11 @@ const SearchInput = () => {
 		setSearchValue(e.target.value);
 	};
 	return (
-		<Form onSubmit={handleSubmitSearch} onChange={handleSearchInput}>
+		<Form
+			style={{ fontFamily: "ambitsemibold_italic" }}
+			onSubmit={handleSubmitSearch}
+			onChange={handleSearchInput}
+		>
 			<TextInput
 				icon={<Search />}
 				placeholder="Search something"
