@@ -13,6 +13,7 @@ const HomeSec1 = () => {
 			areas={[["welcome", "images"]]}
 			gap="small"
 			height={"450px"}
+			style={{ background: colors.lightBg }}
 		>
 			<Box pad={"medium"} gridArea="welcome">
 				<Heading style={{ fontFamily: "oboto_slabregular", size: "48px" }}>
