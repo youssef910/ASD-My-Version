@@ -83,3 +83,26 @@
 .images-Box2 {
 	position: relative;
 }
+
+/* home sec 4 */
+.colored-box2 {
+	height: 350px;
+	width: 380px;
+	margin-left: 40px;
+	margin-top: 60px;
+	border-radius: 25px;
+	left: 0;
+	background-color: #f4dfd0;
+}
+
+.image2 {
+	height: 281px;
+	border-radius: 25px;
+	margin-top: 38px;
+	margin-left: -50px;
+	top: 50px;
+	left: 128px;
+}
+.images-Box2 {
+	position: relative;
+}
