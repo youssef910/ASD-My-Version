@@ -6,7 +6,7 @@ import RegisterPage from "./pages/RegisterPage";
 import "./App.css";
 import colors from "../src/utilities/colors";
 const App = () => (
-	<div style={{ background: colors.lightBg }}>
+	<div >
 		<NavBar />
 		<Switch>
 			<Route path="/" exact>
