@@ -19,6 +19,7 @@ const HomeSec2scrollDown = () => {
 			columns={["100%"]}
 			areas={[["scrollDown"]]}
 			height={"80px"}
+			style={{ background: colors.lightBg }}
 		>
 			<Box gridArea="scrollDown" align="center" className="images-Box">
 				<Text color={colors.blue}>SCROLL DOWN</Text>

@@ -12,6 +12,7 @@ const HomeSec3 = () => {
 			areas={[["images", "about"]]}
 			gap="small"
 			height={"450px"}
+			style={{ background: colors.lightBg }}
 		>
 			<Box gridArea="images" alignContent="left" className="images-Box2">
 				<Box className="child colored-box2"></Box>
