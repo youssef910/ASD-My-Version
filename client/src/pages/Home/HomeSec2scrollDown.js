@@ -18,7 +18,7 @@ const HomeSec2scrollDown = () => {
 			rows={["medium"]}
 			columns={["100%"]}
 			areas={[["scrollDown"]]}
-			gap="small"
+			height={"80px"}
 		>
 			<Box gridArea="scrollDown" align="center" className="images-Box">
 				<Text color={colors.blue}>SCROLL DOWN</Text>
