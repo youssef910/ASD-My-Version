@@ -85,7 +85,7 @@
 }
 
 /* home sec 4 */
-.colored-box2 {
+.colored-box3 {
 	height: 350px;
 	width: 380px;
 	margin-left: 40px;
@@ -95,7 +95,7 @@
 	background-color: #f4dfd0;
 }
 
-.image2 {
+.image3 {
 	height: 281px;
 	border-radius: 25px;
 	margin-top: 38px;
@@ -103,6 +103,6 @@
 	top: 50px;
 	left: 128px;
 }
-.images-Box2 {
+.images-Box3 {
 	position: relative;
 }
