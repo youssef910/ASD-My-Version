@@ -16,7 +16,7 @@ const HomeSec1 = () => {
 		>
 			<Box pad={"medium"} gridArea="welcome">
 				<Heading style={{ fontFamily: "oboto_slabregular", size: "48px" }}>
-					Welcome to SENsation Life
+					Welcome to <br /> SENsation Life
 				</Heading>
 				<List
 					style={{ fontFamily: "nexa_demolight" }}
