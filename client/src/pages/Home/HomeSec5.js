@@ -1,56 +1,49 @@
 import React from "react";
-import { Grid, Box, Heading, Text, Button, Image } from "grommet";
-import AboutImage from "../../utilities/images/cute-girl-with-down-syndrome-in-mothers-arms-2021-09-24-04-06-20-utc.jpg";
 import "../../App.css";
-import { Link } from "react-router-dom";
-import colors from "../../utilities/colors";
+const membersSays = [
+	{
+		head: "Kate - UK",
+		p: `“Thank you so much this is great. I
+home school my daughter due to her
+high anxiety, so this will be used all
+time”
+`,
+	},
+	{
+		head: "Anonymous",
+		p: `“This group has given me the courage
+to go against the system and fight to
+get my daughter the help needs.”
+`,
+	},
+	{
+		head: "SENsational Life",
+		p: `“So happy that our closed parent
+support group has such an impact.
+Come on and over join us.”
+`,
+	},
+];
 
-const HomeSec4 = () => {
+const HomeSec5 = () => {
 	return (
-		<Grid
-			rows={["medium"]}
-			columns={["45%", "55%"]}
-			areas={[["about", "images"]]}
-			gap="small"
-			height={"450px"}
-			style={{ background: colors.lightBg }}
-		>
-			<Box gridArea="images" alignContent="left" className="images-Box">
-				<Box className="child colored-box4"></Box>
-				<Image src={AboutImage} className="child image4" />
-			</Box>
-			<Box align="right" pad={"medium"} alignContent="center" gridArea="about">
-				<Heading
-					alignSelf="center"
-					style={{ fontFamily: "oboto_slabregular", size: "48px" }}
-				>
-					We support you
-				</Heading>
-				<Text alignSelf="center">
-					If you are a parent of any autistic child
-					<br /> (whether officially diagnosed on the long
-					<br />
-					winded journey or just have some
-					<br /> concerns),then this is the group for you!
-				</Text>
-				<Box alignSelf="center" height="100px" width="290px" pad="medium">
-					<Link to="/register">
-						<Button
-							style={{
-								borderRadius: "0",
-								fontFamily: "ambitsemibold",
-								size: "24px",
-							}}
-							primary
-							color={colors.black}
-							label="Join Us"
-							onClick={() => {}}
-						/>{" "}
-					</Link>
-				</Box>
-			</Box>
-		</Grid>
+		<div className=" flex flex-col bg-[#1E6DD0] p-3 justify-items-center">
+			<h1 className="text-center text-white text-2xl">
+				What Our Beloved Members Say
+			</h1>
+			<div className="grid  grid-cols-3  justify-items-center  m-8  gap-8">
+				{membersSays.map((x) => (
+					<div className=" w-4/5 p-6 flex flex-col se bg-white   ">
+						<h3 className=" text-lg">{x.head}</h3>
+						<p>{x.p}</p>
+					</div>
+				))}
+			</div>
+			<button className="bg-black text-white p-2   self-center">
+				Click here to Register
+			</button>
+		</div>
 	);
 };
 
-export default HomeSec4;
+export default HomeSec5;
