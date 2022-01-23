@@ -109,3 +109,22 @@
 .images-Box3 {
 	position: relative;
 }
+
+/* home sec 5 */
+.image4 {
+	height: 281px;
+	border-radius: 25px;
+	margin-top: 38px;
+	margin-left: -50px;
+	top: 50px;
+	left: 128px;
+}
+.colored-box4 {
+	height: 350px;
+	width: 380px;
+	margin-left: 156px;
+	margin-top: 64px;
+	border-radius: 25px;
+	left: 0;
+	background-color: #f4dfd0;
+}
