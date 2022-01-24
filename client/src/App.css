@@ -123,3 +123,22 @@
 	left: 0;
 	background-color: #f4dfd0;
 }
+
+/* home subscribe */
+.image5 {
+	height: 281px;
+	border-radius: 25px;
+	margin-top: 38px;
+	margin-left: -50px;
+	top: 50px;
+	left: 128px;
+}
+.colored-box5 {
+	height: 286px;
+	width: 380px;
+	margin-left: 156px;
+	margin-top: 113px;
+	border-radius: 25px;
+	left: 0;
+	background-color: #a4e4db;
+}

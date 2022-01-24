@@ -6,6 +6,7 @@ import HomeSec2scrollDown from "./HomeSec2scrollDown";
 import HomeSec3 from "./HomeSec3";
 import HomeSec4 from "./HomeSec4";
 import HomeSec5 from "./HomeSec5";
+import Subscribe from "./Subscribe";
 const Home = () => {
 	return (
 		<div>
@@ -14,6 +15,7 @@ const Home = () => {
 			<HomeSec3 />
 			<HomeSec4 />
 			<HomeSec5 />
+			<Subscribe />
 		</div>
 	);
 };
