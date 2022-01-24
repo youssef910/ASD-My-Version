@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import NavBar from "./pages/NavBar/NavBar";
 import RegisterPage from "./pages/RegisterPage";
 import "./App.css";
-import colors from "../src/utilities/colors";
+import Footer from "./pages/Footer/Footer";
 const App = () => (
 	<div className="container mx-auto">
 		<NavBar />
@@ -19,6 +19,7 @@ const App = () => (
 				<RegisterPage />
 			</Route>
 		</Switch>
+		<Footer />
 	</div>
 );
 
