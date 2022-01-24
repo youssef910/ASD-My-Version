@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box, Heading, Text, Button, Image } from "grommet";
-import AboutImage from "../../utilities/images/cute-girl-with-down-syndrome-in-mothers-arms-2021-09-24-04-06-20-utc.jpg";
+import AboutImage from "../../utilities/images/supporting-elderly-woman.jpg";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import colors from "../../utilities/colors";
