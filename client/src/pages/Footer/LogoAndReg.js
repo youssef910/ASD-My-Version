@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "../../App.css";
 function LogoAndReg() {
 	return (
-		<Box>
+		<Box border={"bottom"}>
 			{" "}
 			<Main
 				background="light-4"
@@ -35,7 +35,7 @@ function LogoAndReg() {
 					<Box gridArea="button" gap="medium" direction="row-reverse">
 						<Link to="#">
 							<Button
-								alignSelf="right"
+								alignSelf="end"
 								style={{
 									borderRadius: "0",
 									fontFamily: "ambitsemibold_italic",
