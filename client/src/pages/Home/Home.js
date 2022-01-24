@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../../App.css";
+import FAQButton from "./FAQButton";
 import HomeSec1 from "./HomeSec1";
 import HomeSec2scrollDown from "./HomeSec2scrollDown";
 import HomeSec3 from "./HomeSec3";
@@ -16,6 +17,7 @@ const Home = () => {
 			<HomeSec4 />
 			<HomeSec5 />
 			<Subscribe />
+			<FAQButton />
 		</div>
 	);
 };
