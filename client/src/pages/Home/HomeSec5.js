@@ -1,5 +1,16 @@
 import React from "react";
+import {
+	Button,
+	Card,
+	CardHeader,
+	Heading,
+	Grid,
+	Markdown,
+	Box,
+} from "grommet";
+import colors from "../../utilities/colors";
 import "../../App.css";
+import { Link } from "react-router-dom";
 const membersSays = [
 	{
 		head: "Kate - UK",
@@ -27,22 +38,61 @@ Come on and over join us.”
 
 const HomeSec5 = () => {
 	return (
-		<div className=" flex flex-col bg-[#1E6DD0] p-3 justify-items-center">
-			<h1 className="text-center text-white text-2xl">
+		// <Grommet theme={theme}>
+		<Box
+			justifyContent="center"
+			pad={"medium"}
+			gap="medium"
+			background={colors.blue}
+		>
+			<Heading level="3" alignSelf="center" textAlign="center" margin="none">
 				What Our Beloved Members Say
-			</h1>
-			<div className="grid  grid-cols-3  justify-items-center  m-8  gap-8">
+			</Heading>
+			<Grid
+				justifyContent="around"
+				columns={{
+					count: 3,
+					size: "auto",
+				}}
+				gap="medium"
+			>
 				{membersSays.map((x) => (
-					<div className=" w-4/5 p-6 flex flex-col se bg-white   ">
-						<h3 className=" text-lg">{x.head}</h3>
-						<p>{x.p}</p>
-					</div>
+					<Card
+						pad="medium"
+						key={x.head}
+						justifyContent="around"
+						margin={"medium"}
+						background={"white"}
+					>
+						<CardHeader
+							style={{ fontFamily: "roboto_slabregular", size: "48px" }}
+							size="medium"
+						>
+							{x.head}
+						</CardHeader>
+						<Markdown style={{ fontFamily: "nexa_demolight", size: "20px" }}>
+							{x.p}
+						</Markdown>
+					</Card>
 				))}
-			</div>
-			<button className="bg-black text-white p-2   self-center">
-				Click here to Register
-			</button>
-		</div>
+			</Grid>
+			<Box alignSelf="center">
+				<Link to="/register">
+					<Button
+						alignSelf="center"
+						style={{
+							borderRadius: "0",
+							fontFamily: "ambitsemibold",
+							size: "24px",
+						}}
+						primary
+						color={colors.black}
+						label="Click here to Register"
+					></Button>
+				</Link>
+			</Box>
+		</Box>
+		// </Grommet>
 	);
 };
 
