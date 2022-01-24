@@ -37,7 +37,7 @@ function Social() {
 					</Text>
 				</Box>
 			</Footer>
-			;
+		
 		</div>
 	);
 }
