@@ -9,6 +9,7 @@ function FAQButton() {
 			background={colors.lightBg}
 			justify="center"
 			align="center"
+			height="75vh"
 		>
 			<Link to="#">
 				<Button
@@ -17,6 +18,7 @@ function FAQButton() {
 						fontFamily: "ambitsemibold",
 						size: "24px",
 					}}
+					size="large"
 					primary
 					color={colors.blue}
 					label="Frequently Asked Questions"

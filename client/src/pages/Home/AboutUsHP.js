@@ -1,45 +1,41 @@
 import React from "react";
 import { Grid, Box, Heading, Text, Button, Image } from "grommet";
 import AboutImage from "../../utilities/images/about-us-concept-2021-08-31-16-59-05-utc.jpg";
-import "../../App.css";
 import { Link } from "react-router-dom";
 import colors from "../../utilities/colors";
-const HomeSec3 = () => {
+const AboutUs = () => {
 	return (
 		<Grid
-			rows={["medium"]}
-			columns={["55%", "40%"]}
+			rows={["large"]}
+			columns={["50%", "50%"]}
 			areas={[["images", "about"]]}
 			gap="small"
-			height={"450px"}
+			height={"80vh"}
 			style={{ background: colors.lightBg }}
 		>
-			<Box gridArea="images" alignContent="left" className="images-Box2">
-				<Box className="child colored-box2"></Box>
-				<Image src={AboutImage} className="child image2" />
+			<Box gridArea="images" alignContent="left" className="images-Box">
+				<Box className="child colored-box-About"></Box>
+				<Image src={AboutImage} className="child image-About" />
 			</Box>
-			<Box align="right" pad={"medium"} alignContent="center" gridArea="about">
-				<Heading
-					alignSelf="center"
-					style={{ fontFamily: "oboto_slabregular", size: "48px" }}
-				>
+			<Box gap="large" pad={"medium"} gridArea="about">
+				<Heading alignSelf="center" fontFamily="roboto_slabregular" size="56px">
 					About Us
 				</Heading>
-				<Text alignSelf="center">
+				<Text fontFamily="nexa-demolight" size="25px" alignSelf="center">
 					SENsational Life: Autism and
 					<br /> Family support was founded by
 					<br /> Kelly-anne Smith, who has over
 					<br /> 20 years experience of SEN; both <br />
 					professionally and personally.
 				</Text>
-				<Box alignSelf="center" height="100px" width="290px" pad="medium">
+				<Box alignSelf="center" height="100px" pad="medium">
 					<Link to="/about">
 						<Button
 							style={{
 								borderRadius: "0",
 								fontFamily: "ambitsemibold",
-								size: "24px",
 							}}
+							size="large"
 							primary
 							color={colors.black}
 							label="Read More"
@@ -52,4 +48,4 @@ const HomeSec3 = () => {
 	);
 };
 
-export default HomeSec3;
+export default AboutUs;

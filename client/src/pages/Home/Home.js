@@ -1,21 +1,21 @@
 import React from "react";
 
-import "../../App.css";
+import "./Home.css";
 import FAQButton from "./FAQButton";
-import HomeSec1 from "./HomeSec1";
-import HomeSec2scrollDown from "./HomeSec2scrollDown";
-import HomeSec3 from "./HomeSec3";
-import HomeSec4 from "./HomeSec4";
-import HomeSec5 from "./HomeSec5";
-import Subscribe from "./Subscribe";
+import WelcomeHP from "./WelcomeHP";
+import ScrollDownHP from "./ScrollDownHP";
+import AboutUs from "./AboutUsHP";
+import WhatWeDo from "./WhatWeDoHP";
+import MemberSays from "./MemberSaysPH";
+import Subscribe from "./SubscribeHP";
 const Home = () => {
 	return (
 		<div>
-			<HomeSec1 style={{ margin: "50px" }} />
-			<HomeSec2scrollDown />
-			<HomeSec3 />
-			<HomeSec4 />
-			<HomeSec5 />
+			<WelcomeHP />
+			<ScrollDownHP />
+			<AboutUs />
+			<WhatWeDo />
+			<MemberSays />
 			<Subscribe />
 			<FAQButton />
 		</div>

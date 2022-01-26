@@ -1,13 +1,5 @@
 import React from "react";
-import {
-	Button,
-	Card,
-	CardHeader,
-	Heading,
-	Grid,
-	Markdown,
-	Box,
-} from "grommet";
+import { Button, Card, CardHeader, Heading, Grid, Text, Box } from "grommet";
 import colors from "../../utilities/colors";
 import "../../App.css";
 import { Link } from "react-router-dom";
@@ -36,43 +28,46 @@ Come on and over join us.”
 	},
 ];
 
-const HomeSec5 = () => {
+const MemberSays = () => {
 	return (
-		// <Grommet theme={theme}>
 		<Box
 			justifyContent="center"
 			pad={"medium"}
 			gap="medium"
+			height={"80vh"}
 			background={colors.blue}
 		>
 			<Heading level="3" alignSelf="center" textAlign="center" margin="none">
 				What Our Beloved Members Say
 			</Heading>
 			<Grid
-				justifyContent="around"
+				justify="center"
 				columns={{
 					count: 3,
-					size: "auto",
+					size: "medium",
 				}}
+				height={"55Vh"}
 				gap="medium"
 			>
 				{membersSays.map((x) => (
 					<Card
 						pad="medium"
 						key={x.head}
-						justifyContent="around"
 						margin={"medium"}
+						width={"75%"}
+						height={"40vh"}
 						background={"white"}
+						gap="medium"
 					>
 						<CardHeader
-							style={{ fontFamily: "roboto_slabregular", size: "48px" }}
-							size="medium"
+							style={{ fontFamily: "roboto_slabregular", fontSize: "30px" }}
+							// size="medium"
 						>
 							{x.head}
 						</CardHeader>
-						<Markdown style={{ fontFamily: "nexa_demolight", size: "20px" }}>
+						<Text style={{ fontFamily: "nexa_demolight", fontSize: "25px" }}>
 							{x.p}
-						</Markdown>
+						</Text>
 					</Card>
 				))}
 			</Grid>
@@ -92,8 +87,7 @@ const HomeSec5 = () => {
 				</Link>
 			</Box>
 		</Box>
-		// </Grommet>
 	);
 };
 
-export default HomeSec5;
+export default MemberSays;
