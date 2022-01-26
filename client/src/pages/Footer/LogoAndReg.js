@@ -48,7 +48,9 @@ function LogoAndReg() {
 								label="Get Started"
 							/>
 						</Link>
-						<Text size="small">Do Want to be part of us?</Text>
+						<Text size="large" fontFamily="roboto_slabregular">
+							Do Want to be part of us?
+						</Text>
 					</Box>
 				</Grid>
 			</Main>
