@@ -80,6 +80,8 @@ const MemberSays = () => {
 							fontFamily: "ambitsemibold",
 							size: "24px",
 						}}
+						size="large"
+						hoverIndicator={{ background: "dark-2" }}
 						primary
 						color={colors.black}
 						label="Click here to Register"

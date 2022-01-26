@@ -24,7 +24,7 @@ const WhatWeDo = () => {
 				pad={"medium"}
 				alignContent="center"
 				gridArea="WhatWeDo"
-				gap='medium'
+				gap="medium"
 			>
 				<Heading alignSelf="center" fontFamily="roboto_slabregular" size="56px">
 					What We Do?
@@ -45,6 +45,7 @@ const WhatWeDo = () => {
 							}}
 							size="large"
 							primary
+							hoverIndicator={{ background: "dark-2" }}
 							color={colors.black}
 							label="Read More"
 							onClick={() => {}}

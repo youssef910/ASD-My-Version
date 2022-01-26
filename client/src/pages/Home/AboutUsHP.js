@@ -36,6 +36,7 @@ const AboutUs = () => {
 								fontFamily: "ambitsemibold",
 							}}
 							size="large"
+							hoverIndicator={{ background: "dark-2" }}
 							primary
 							color={colors.black}
 							label="Read More"

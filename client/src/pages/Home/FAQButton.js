@@ -19,6 +19,7 @@ function FAQButton() {
 						size: "24px",
 					}}
 					size="large"
+					hoverIndicator={{ background: colors.baleBlue }}
 					primary
 					color={colors.blue}
 					label="Frequently Asked Questions"
