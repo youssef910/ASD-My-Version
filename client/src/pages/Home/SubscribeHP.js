@@ -18,19 +18,23 @@ const Subscribe = () => {
 	};
 	return (
 		<Grid
-			rows={["medium"]}
-			columns={["45%", "55%"]}
+			rows={["large"]}
+			columns={["50%", "50%"]}
 			areas={[["about", "images"]]}
 			gap="small"
-			height={"450px"}
+			height={"80vh"}
 			style={{ background: colors.peag }}
 		>
 			<Box gridArea="images" alignContent="left" className="images-Box">
-				<Box className="child colored-box5"></Box>
-				<Image src={AboutImage} className="child image5" />
+				<Box className="child colored-box-subscribe"></Box>
+				<Image src={AboutImage} className="child image-subscribe" />
 			</Box>
 			<Box align="right" pad={"medium"} alignContent="center" gridArea="about">
-				<Heading alignSelf="center" style={{ fontFamily: "oboto_slabregular" }}>
+				<Heading
+					alignSelf="center"
+					fontFamily="roboto_slabregular"
+					fontSize="56px"
+				>
 					Subscribe to <br />
 					our newsletter
 				</Heading>
@@ -46,13 +50,13 @@ const Subscribe = () => {
 								background={colors.black}
 								style={{ backgroundColor: colors.black }}
 								size="medium"
-								pad="medium"
 								color="white"
 							/>
 						}
+						width={"50rem"}
 						placeholder="what is your email address?"
 						value={email}
-						size="small"
+						size="medium"
 						type="email"
 						reverse
 						style={{ backgroundColor: "white" }}

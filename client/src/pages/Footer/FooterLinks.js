@@ -1,9 +1,33 @@
 import React from "react";
-import { Footer, Anchor, Text, Box, MaskedInput, Grid } from "grommet";
+import {
+	Footer,
+	Anchor,
+	Text,
+	Box,
+	MaskedInput,
+	Grid,
+	ResponsiveContext,
+} from "grommet";
 import colors from "../../utilities/colors";
 import { MailOption } from "grommet-icons";
 const mailtoHref =
 	"mailto:support@example.com?subject=SendMail&body=Description";
+import LinkedAnchor from "./LinkedAnchor";
+let aboutLinks = [
+	{
+		title: "Our Story",
+		link: "#",
+	},
+	{ title: "Team", link: "#" },
+];
+let resourcesLinks = [
+	{
+		title: "Timetables",
+		link: "#",
+	},
+	{ title: "Referrals", link: "#" },
+	{ title: "useFull Link", link: "#" },
+];
 const FooterLinks = () => {
 	return (
 		<Footer
@@ -11,49 +35,50 @@ const FooterLinks = () => {
 			height={"small"}
 			justify="around"
 			background={colors.black}
+			gap="medium"
 		>
 			<Box direction="row" gap="xlarge">
 				<Box gap="medium" pad="medium">
-					<Text weight="bold" size="small">
+					<Text
+						weight="bold"
+						size="large"
+						fontFamily="ambitsemibold"
+						fontSize="25"
+					>
 						About
 					</Text>
 					<Box gap="small">
-						<Anchor weight={"small"} color={"white"}>
-							{" "}
-							Our Story
-						</Anchor>
-						<Anchor weight={"small"} color={"white"}>
-							Team
-						</Anchor>
+						{aboutLinks.map((x, i) => (
+							<LinkedAnchor key={x.title} title={x.title} link={x.link} />
+						))}
 					</Box>
 				</Box>
 				<Box gap="medium" pad="medium">
-					<Text weight="bold" size="small">
+					<Text
+						weight="bold"
+						size="large"
+						fontFamily="ambitsemibold"
+						fontSize="25"
+					>
 						Resources
 					</Text>
 					<Box gap="small">
-						<Anchor weight={"small"} color={"white"}>
-							{" "}
-							Timetables
-						</Anchor>
-						<Anchor weight={"small"} color={"white"}>
-							{" "}
-							Referrals
-						</Anchor>
-						<Anchor weight={"small"} color={"white"}>
-							{" "}
-							useFull Link
-						</Anchor>
+						{resourcesLinks.map((x, i) => (
+							<LinkedAnchor key={x.title} title={x.title} link={x.link} />
+						))}
 					</Box>
 				</Box>
 				<Box gap="medium" pad={"medium"}>
-					<Text weight="bold" size="small">
+					<Text
+						weight="bold"
+						size="large"
+						fontFamily="ambitsemibold"
+						fontSize="25"
+					>
 						Help
 					</Text>
 					<Box>
-						<Anchor weight={"small"} color={"white"}>
-							FAQ
-						</Anchor>
+						<LinkedAnchor title="FAQ" link="#" />
 					</Box>
 				</Box>
 			</Box>
