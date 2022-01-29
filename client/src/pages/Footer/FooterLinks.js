@@ -1,13 +1,5 @@
 import React from "react";
-import {
-	Footer,
-	Anchor,
-	Text,
-	Box,
-	MaskedInput,
-	Grid,
-	ResponsiveContext,
-} from "grommet";
+import { Footer, Anchor, Text, Box } from "grommet";
 import colors from "../../utilities/colors";
 import { MailOption } from "grommet-icons";
 const mailtoHref =
